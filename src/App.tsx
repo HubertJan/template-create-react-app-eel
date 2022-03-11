@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+const logo = require("./logo.svg") as string;
 import "./App.css";
 
 import { eel } from "./eel.js";
 
 class App extends Component {
-  constructor(props) {
+  constructor(props: never) {
     super(props);
     eel.set_host("ws://localhost:8888");
     eel.hello();
